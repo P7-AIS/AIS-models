@@ -2,7 +2,7 @@ export type Vessel = {
   id: number
   name: string
   mmsi: number
-  shipTypeId?: number
+  shipType?: string
   imo?: number
   callSign?: string
   flag?: string
