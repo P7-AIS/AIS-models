@@ -19,27 +19,16 @@ export type AisMessage = {
 
 export type SimpleVessel = {
   mmsi: number
-  location: Location
-}
-
-export type Location = {
-  point: Point
+  binLocation: Buffer
   heading?: number
-  timestamp: number
-}
-
-export type Point = {
-  lat: number
-  lon: number
 }
 
 export type Vessel = {
   mmsi: number
-  name: string
+  name?: string
   shipType?: string
   imo?: number
   callSign?: string
-  flag?: string
   width?: number
   length?: number
   positionFixingDevice?: string
@@ -52,4 +41,9 @@ export type Vessel = {
 export type ShipType = {
   id: number
   name?: string
+}
+
+export type VesselPath = {
+  binPath: Buffer
+  headings: (number | undefined)[]
 }
