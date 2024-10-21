@@ -25,7 +25,7 @@ export type Point = {
 export type Location = {
   point: Point
   heading?: number
-  timestamp: Date
+  timestamp: number
 }
 
 export type SimpleVessel = {
