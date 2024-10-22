@@ -65,7 +65,8 @@ export type VesselPath = {
 
 export type AISJobData = {
   mmsi: number
-  location: Location[]
+  binPath: Buffer
+  aisMessages: AisMessage[]
 }[]
 
 export type AISJobResult = {
