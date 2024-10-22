@@ -33,6 +33,12 @@ export type SimpleVessel = {
   location: Location
 }
 
+export type MonitoredVessel = {
+  mmsi: number
+  trustworthiness: number
+  reason?: string
+}
+
 export type Vessel = {
   mmsi: number
   name?: string
@@ -56,3 +62,14 @@ export type ShipType = {
 export type VesselPath = {
   locations: Location[]
 }
+
+export type AISJobData = {
+  mmsi: number
+  location: Location[]
+}[]
+
+export type AISJobResult = {
+  mmsi: number
+  trustworthiness: number
+  reason?: string
+}[]
