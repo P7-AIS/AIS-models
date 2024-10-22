@@ -63,12 +63,14 @@ export type VesselPath = {
   locations: Location[]
 }
 
+export type Trajectory = {
+  mmsi: number
+  binPath: Buffer
+}
+
 export type AISJobData = {
   aisMessages: AisMessage[]
-  trajectories: {
-    mmsi: number
-    binPath: Buffer
-  }[]
+  trajectories: Trajectory[]
 }
 
 export type AISJobResult = {
