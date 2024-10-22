@@ -1,13 +1,11 @@
 export type AisMessage = {
   id: number
   mmsi: number
-  destinationId?: number
+  destination?: string
   mobileTypeId?: number
   navigationalStatusId?: number
   dataSourceType?: string
   timestamp: Date
-  latitude: number
-  longitude: number
   rot?: number
   sog?: number
   cog?: number
