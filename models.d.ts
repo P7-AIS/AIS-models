@@ -70,10 +70,17 @@ export type AISJobData = {
   mmsi: number
   aisMessages: AisMessage[]
   trajectory: Trajectory
+  algorithm: AISWorkerAlgorithm
 }
 
 export type AISJobResult = {
   mmsi: number
   trustworthiness: number
   reason?: string
+  algorithm: AISWorkerAlgorithm
+}
+
+export enum AISWorkerAlgorithm {
+  SIMPLE = 'simple',
+  RANDOM = 'random',
 }
