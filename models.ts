@@ -63,7 +63,7 @@ export type VesselPath = {
 
 export type Trajectory = {
   mmsi: number
-  base64Path: string
+  binPath: Buffer
 }
 
 export type AISJobData = {
