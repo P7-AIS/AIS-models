@@ -67,12 +67,13 @@ export type Trajectory = {
 }
 
 export type AISJobData = {
+  mmsi: number
   aisMessages: AisMessage[]
-  trajectories: Trajectory[]
+  trajectory: Trajectory
 }
 
 export type AISJobResult = {
   mmsi: number
   trustworthiness: number
   reason?: string
-}[]
+}
