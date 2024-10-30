@@ -83,4 +83,5 @@ export type AISJobResult = {
 export enum AISWorkerAlgorithm {
   SIMPLE = 'simple',
   RANDOM = 'random',
+  HASHED = 'hashed',
 }
