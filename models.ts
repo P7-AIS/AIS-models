@@ -71,7 +71,7 @@ export type AISJobData = {
   aisMessages: AisMessage[]
   trajectory: Trajectory
   algorithm: AISWorkerAlgorithm
-  scoreFractions: ScoreNumeratorDenominator
+  scoreFractions: OldScore
 }
 
 export type AISJobResult = {
@@ -79,10 +79,10 @@ export type AISJobResult = {
   trustworthiness: number
   reason?: string
   algorithm: AISWorkerAlgorithm
-  scoreFractions: ScoreNumeratorDenominator
+  scoreFractions: OldScore
 }
 
-export type ScoreNumeratorDenominator = {
+export type OldScore = {
   timestamp: Date
   trajectory: ScoreFraction
   cog: ScoreFraction
