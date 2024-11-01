@@ -71,6 +71,7 @@ export type AISJobData = {
   aisMessages: AisMessage[]
   trajectory: Trajectory
   algorithm: AISWorkerAlgorithm
+  scoreFractions: ScoreNumeratorDenominator
 }
 
 export type AISJobResult = {
@@ -78,6 +79,18 @@ export type AISJobResult = {
   trustworthiness: number
   reason?: string
   algorithm: AISWorkerAlgorithm
+  scoreFractions: ScoreNumeratorDenominator
+} // TODO: Make a timestamp for when the score was calculated.
+
+export type ScoreNumeratorDenominator = {
+  trajectory: ScoreFraction
+  cog: ScoreFraction
+  speed: ScoreFraction
+}
+
+export type ScoreFraction = {
+  numerator: number
+  denominator: number
 }
 
 export enum AISWorkerAlgorithm {
