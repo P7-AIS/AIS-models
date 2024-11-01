@@ -96,4 +96,5 @@ export type ScoreFraction = {
 export enum AISWorkerAlgorithm {
   SIMPLE = 'simple',
   RANDOM = 'random',
+  HASHED = 'hashed',
 }
