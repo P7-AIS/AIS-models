@@ -80,9 +80,10 @@ export type AISJobResult = {
   reason?: string
   algorithm: AISWorkerAlgorithm
   scoreFractions: ScoreNumeratorDenominator
-} // TODO: Make a timestamp for when the score was calculated.
+}
 
 export type ScoreNumeratorDenominator = {
+  timestamp: Date
   trajectory: ScoreFraction
   cog: ScoreFraction
   speed: ScoreFraction
