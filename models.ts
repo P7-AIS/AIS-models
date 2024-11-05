@@ -79,11 +79,12 @@ export type AISJobResult = {
   trustworthiness: number
   reason?: string
   algorithm: AISWorkerAlgorithm
-  scoreFractions: OldScore
+  scoreFractions?: OldScore[]
 }
 
 export type OldScore = {
-  timestamp: Date
+  timeStart: Date
+  timeEnd: Date
   trajectory: ScoreFraction
   cog: ScoreFraction
   speed: ScoreFraction
