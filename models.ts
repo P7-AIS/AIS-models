@@ -68,8 +68,7 @@ export type Trajectory = {
 
 export type AISJobData = {
   mmsi: number
-  aisMessages: AisMessage[]
-  trajectory: Trajectory
+  timestamp: number
   algorithm: AISWorkerAlgorithm
 }
 
