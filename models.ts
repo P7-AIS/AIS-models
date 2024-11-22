@@ -84,3 +84,10 @@ export enum AISWorkerAlgorithm {
   RANDOM = 'random',
   HASHED = 'hashed',
 }
+
+export type JobAisData = {
+  mmsi: number
+  messages: AisMessage[]
+  trajectory: Trajectory
+  algorithm: AISWorkerAlgorithm
+}
