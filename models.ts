@@ -79,6 +79,13 @@ export type AISJobResult = {
   algorithm: AISWorkerAlgorithm
 }
 
+export type AISJobTestResult = AISJobResult & {
+  endQueuedTo: number
+  startDbQuery: number
+  endDbQuery: number
+  startQueuedFrom: number
+}
+
 export enum AISWorkerAlgorithm {
   SIMPLE = 'simple',
   RANDOM = 'random',
