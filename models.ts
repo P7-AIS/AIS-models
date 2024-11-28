@@ -83,6 +83,8 @@ export type AISJobTestResult = AISJobResult & {
   endQueuedTo: number
   startDbQuery: number
   endDbQuery: number
+  startAlgo: number
+  endAlgo: number
   startQueuedFrom: number
 }
 
