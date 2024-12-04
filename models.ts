@@ -92,8 +92,8 @@ export enum AISWorkerAlgorithm {
   SIMPLE = 'simple',
   RANDOM = 'random',
   HASHED = 'hashed',
-  TESTING = 'testing',
-  PROFILING = 'profiling',
+  PROFILING_FETCH = 'profiling_fetch',
+  PROFILING_JSON = 'profiling_json',
 }
 
 export type JobAisData = {
